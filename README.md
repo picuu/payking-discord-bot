@@ -17,6 +17,7 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 - [Node.js v22.12.0 LTS](https://nodejs.org/en/download/)
+- Create a Discord bot client and get the token and client ID. You can follow the instructions of the [official discord guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
 
 ### Installation
 
