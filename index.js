@@ -1,18 +1,15 @@
 import 'dotenv/config'
-import { Client, Collection, Events } from 'discord.js'
+import { Client, Collection } from 'discord.js'
 import { handleCommands } from './handlers/commands.js'
+import { handleEvents } from './handlers/events.js'
 const TOKEN = process.env.TOKEN
 
 const client = new Client({ intents: 53608447 })
 
 client.commands = new Collection()
 
+handleEvents(client)
 handleCommands(client)
-
-client.once(Events.ClientReady, readyClient => {
-  console.log(`Ready! Logged in as ${readyClient.user.tag}`)
-  client.user.setActivity('/convertir', { type: 'WATCHING' })
-})
 
 client.login(TOKEN)
 
