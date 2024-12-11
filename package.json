@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch index.js"
+    "start": "node --watch index.js",
+    "reload-commands": "node ./functions/reloadCommands.js"
   },
   "keywords": ["discord", "bot"],
   "author": "piicuu",
