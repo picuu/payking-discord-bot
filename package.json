@@ -1,0 +1,24 @@
+{
+  "name": "payking-discord-bot",
+  "version": "1.0.0",
+  "description": "Discord bot for PayKing",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["discord", "bot"],
+  "author": "piicuu",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "eslint": "^9.16.0",
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": ["standard"]
+  }
+}
